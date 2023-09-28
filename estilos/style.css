@@ -7,32 +7,44 @@
 */
 
 *{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Segoe UI', Helvetica, sans-serif;
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }
 
-body{
+body, html{
     background-color: #5f2c82;
+    width: 100vw;
+    height: 100vh;
 }
 
 main{
-    width: 260px;
-    height: 530px;
-    margin: auto;
-    margin-top: 20vh;
-    border-radius: 20px;
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
+
+section#login{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     background-color: white;
+    width: 250px;
+    height: 500px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.450);
 }
 
 main section div#imagem{
-    background: url(/imagens/pattern-m.jpg);
+    background: #5f2c82 url(/imagens/pattern-m.jpg);
     background-position: center;
-    height: 20vh;
+    height: 200px;
     border-radius: 20px 20px 0 0;
 }
 
-div#formulario{
+section#login div#formulario{
     padding: 10px;
 }
 
@@ -55,21 +67,23 @@ div.campo i{
 
 div.campo{
     background-color: #5f2c82;
-    color: white;
-    margin: 5px;
-    border-radius: 5px;
+    border: 2px solid #5f2c82;
+    display: block;
+    width: 100%;
+    height: 40px;
+    border-radius: 8px;
+    margin: 5px 0px;
 }
 
-#email{
+div.campo input{
     background-color: rgb(148, 207, 205);
-    margin: auto;
-    padding: 7px;
-    border: none;
+    font-size: 1em;
+    width: calc(100% - 45px);
+    height: 100%;
+    padding: 4px;
+    border: 0;
     border-radius: 5px;
-}
-
-#senha{
-    background-color: rgb(148, 207, 205);
+    transform: translateY(-10px);
 }
 
 #entrar{
