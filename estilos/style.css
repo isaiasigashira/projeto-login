@@ -30,14 +30,19 @@ section#login{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+
     background-color: white;
     width: 250px;
     height: 500px;
     border-radius: 20px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.450);
+
+    transition: width 0.3s, height 0.3s;
+    transition-timing-function: ease;
 }
 
 main section div#imagem{
+    display: block;
     background: #5f2c82 url(/imagens/pattern-m.jpg);
     background-position: center;
     height: 200px;
@@ -45,6 +50,7 @@ main section div#imagem{
 }
 
 section#login div#formulario{
+    display: block;
     padding: 10px;
 }
 
