@@ -17,10 +17,79 @@ body{
 }
 
 main{
-    width: 250px;
-    height: 500px;
+    width: 260px;
+    height: 530px;
     margin: auto;
-    margin-top: 25vh;
-    border-radius: 10px;
+    margin-top: 20vh;
+    border-radius: 20px;
     background-color: white;
 }
+
+main section div#imagem{
+    background: url(/imagens/pattern-m.jpg);
+    background-position: center;
+    height: 20vh;
+    border-radius: 20px 20px 0 0;
+}
+
+div#formulario{
+    padding: 10px;
+}
+
+div h1{
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+div p{
+    font-size: 0.8em;
+    margin-bottom: 5px;
+}
+
+div.campo i{
+    text-align: center;
+    font-size: 1.9em;
+    width: 40px;
+    margin-top: 5px;
+}
+
+div.campo{
+    background-color: #5f2c82;
+    color: white;
+    margin: 5px;
+    border-radius: 5px;
+}
+
+#email{
+    background-color: rgb(148, 207, 205);
+    margin: auto;
+    padding: 7px;
+    border: none;
+    border-radius: 5px;
+}
+
+#senha{
+    background-color: rgb(148, 207, 205);
+}
+
+#entrar{
+    display: block;
+    background-color: rgb(83, 170, 167);
+    color: white;
+    width: 240px;
+    padding: 15px;
+    margin: auto;
+    margin-bottom: 5px;
+    border: 1px solid rgb(83, 170, 167);
+    border-radius: 5px;
+}
+
+#esqueci{
+    display: block;
+    width: 240px;
+    padding: 15px;
+    margin: auto;
+    border: 2px solid rgb(148, 207, 205);
+    border-radius: 5px;
+}
+
