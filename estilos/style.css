@@ -33,7 +33,7 @@ section#login{
 
     background-color: white;
     width: 250px;
-    height: 500px;
+    height: 515px;
     border-radius: 20px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.450);
 
@@ -43,7 +43,8 @@ section#login{
 
 main section div#imagem{
     display: block;
-    background: #5f2c82 url(/imagens/pattern-m.jpg);
+    background: #5f2c82 url(/imagens/metal.jpg);
+    background-size: cover;
     background-position: center;
     height: 200px;
     border-radius: 20px 20px 0 0;
@@ -64,6 +65,43 @@ div p{
     margin-bottom: 5px;
 }
 
+form input[type=submit] {
+    display: block;
+    background-color: rgb(83, 170, 167);
+    color: white;
+    width: 100%;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form input[type=submit]:hover{
+    background-color: #2e6361;
+}
+
+form a.botao{
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    padding-top: 7px;
+    font-size: 1em;
+    margin-top: 5px;
+    width: 100%;
+    height: 40px;
+    background-color: white;
+    border: 1px solid rgb(148, 207, 205);
+    border-radius: 5px;
+}
+
+form a.botao:hover{
+    background-color: #6cd3cf;
+}
+
+form a.botao i{
+    font-size: 0.8em;
+}
+
 div.campo i{
     text-align: center;
     font-size: 1.9em;
@@ -73,7 +111,6 @@ div.campo i{
 
 div.campo{
     background-color: #5f2c82;
-    border: 2px solid #5f2c82;
     display: block;
     width: 100%;
     height: 40px;
@@ -81,7 +118,12 @@ div.campo{
     margin: 5px 0px;
 }
 
+div.campo label{
+    display: none;
+}
+
 div.campo input{
+
     background-color: rgb(148, 207, 205);
     font-size: 1em;
     width: calc(100% - 45px);
@@ -92,17 +134,6 @@ div.campo input{
     transform: translateY(-10px);
 }
 
-#entrar{
-    display: block;
-    background-color: rgb(83, 170, 167);
-    color: white;
-    width: 240px;
-    padding: 15px;
-    margin: auto;
-    margin-bottom: 5px;
-    border: 1px solid rgb(83, 170, 167);
-    border-radius: 5px;
-}
 
 #esqueci{
     display: block;
